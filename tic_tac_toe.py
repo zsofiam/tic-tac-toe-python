@@ -339,9 +339,9 @@ def main():
 
 
 def handle_single_argv_input():
-    player_mode = input("Choose between 1 or 2 player mode!(1/2)")
+    player_mode = input("Choose between 1 or 2 player mode! (1/2) ")
     while not (player_mode == '1' or player_mode == '2'):
-        player_mode = input("Choose between 1 or 2 player mode!(1/2)")
+        player_mode = input("Choose between 1 or 2 player mode! (1/2) ")
     if player_mode == '1':
         handle_player_mode_1()
     else:
@@ -351,7 +351,7 @@ def handle_single_argv_input():
 def handle_player_mode_1():
     player_starts = None
     while player_starts != 'Y' or player_starts != 'N':
-        player_starts = input("Do you want to start?(Y/N)").upper()
+        player_starts = input("Do you want to start? (Y/N) ").upper()
         if player_starts == 'Y':
             tictactoe_game('HUMAN-AI')
             break
